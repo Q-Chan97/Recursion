@@ -1,4 +1,5 @@
 function fibsRec(num) {
+    console.log("This was printed recursively");
     if (num === 0) return [];
     if (num === 1) return [0];
     if (num === 2) return [0, 1]; // 3 step recursive base, builds out array when called
