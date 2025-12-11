@@ -28,7 +28,8 @@ function mergeSort(array) {
                 result.push(rightArray[j]); // Otherwise, add the integer from the right array
                 j++; // Advance right array
             }
-        }
+        }// While loop stops when one array is empty. This adds the leftover integer into result array.
+        return result.concat(leftArray.slice(i).concat(rightArray.slice(j)));
     }
 }
 
