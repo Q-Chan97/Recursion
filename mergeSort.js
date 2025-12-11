@@ -31,6 +31,7 @@ function mergeSort(array) {
         }// While loop stops when one array is empty. This adds the leftover integer into result array.
         return result.concat(leftArray.slice(i).concat(rightArray.slice(j)));
     }
+    merge(left, right);
 }
 
 console.log(mergeSort(testArray));
